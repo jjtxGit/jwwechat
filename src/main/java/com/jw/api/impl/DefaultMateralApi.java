@@ -1,6 +1,5 @@
 package com.jw.api.impl;
 
-import com.demo.config.MyWeChatConfig;
 import com.google.gson.Gson;
 import com.jw.api.MaterialApi;
 import com.jw.bean.json.Material;
@@ -47,10 +46,5 @@ public class DefaultMateralApi implements MaterialApi {
         }
     }
 
-    public static void main(String[] args) {
-        UnionInstanceHolder.setJwConfigInstance(new MyWeChatConfig());
-        MaterialApi api = new DefaultMateralApi();
-        System.out.println(api.getTempMedia("GU8CFpyJdmY_udneR3nO37uRFJvBL4-dDlYSaE3o-_txeJaF-fQDWpkpZ5RmkUnW"));
-    }
 
 }
